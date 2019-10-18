@@ -52,6 +52,18 @@ Distributed under Creative Commons 2.5 -- Attribution & Share Alike
 The hardware for this project uses an Arduino:  
  * Connect an IR LED to pin 3 (IRLED).  
  * Connect a visible LED to the pin 13 (or use the built-in LED in many Arduinos).  
+ 
+
+ 
+# HARDWARE:
+Here are the parts I used:
+[SPST On/off switch](https://www.aliexpress.com/item/32832214619.html)
+[9V Battery clip](https://www.aliexpress.com/item/32672374771.html)
+[IR LED](https://www.aliexpress.com/item/32801162685.html)
+[Arduino Nano](https://www.aliexpress.com/item/32341832857.html)
+
+Note that the Arduino digital pins cannot typically supply enough current to drive an IR LED and so you may wish to implement a simple driver circuit like the one below:
+![Driver circuit](https://cdn-learn.adafruit.com/assets/assets/000/023/275/medium800/light_ir_output.png)
 
 # User Manual:  
 ## Background Settings:  
