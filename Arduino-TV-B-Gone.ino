@@ -202,7 +202,6 @@ uint8_t read_bits(uint8_t count)
 
 uint16_t ontime, offtime;
 uint8_t i, num_codes;
-uint8_t region;
 
 void setup()
 {
@@ -219,8 +218,12 @@ void setup()
   delay_ten_us(5000); //50ms (5000x10 us) delay: let everything settle for a bit
 
   // determine region
-  region = NA;
-  DEBUGP(putstring_nl("NA"));
+  if (REGION == 1) {
+    DEBUGP(putstring_nl("NA"));
+  }
+  else {
+    DEBUGP(putstring_nl("EU"));
+  }
   // Debug output: indicate how big our database is
   DEBUGP(putstring("\n\rNA Codesize: ");
          putnum_ud(num_NAcodes);
@@ -230,7 +233,7 @@ void setup()
         );
 
   // Tell the user what region we're in  - 3 flashes is NA, 6 is EU
-  if (region == NA)
+  if (REGION == 1)
     quickflashLEDx(3);
   else //region == EU
     quickflashLEDx(6);
@@ -244,8 +247,11 @@ void sendAllCodes()
 {
   bool endingEarly = false; //will be set to true if the user presses the button during code-sending
 
-  region = NA;
-  num_codes = num_NAcodes;
+  if (REGION == 1) {
+    num_codes = num_NAcodes;
+  } else {
+    num_codes = num_EUcodes;
+  }
 
   // for every POWER code in our collection
   for (i = 0 ; i < num_codes; i++)
@@ -257,7 +263,7 @@ void sendAllCodes()
            putnum_ud(i));
 
     // point to next POWER code, from the right database
-    if (region == NA) {
+    if (REGION == 1) {
       data_ptr = (PGM_P)pgm_read_word(NApowerCodes + i);
     }
     else {

@@ -11,8 +11,7 @@ By Gabriel Staples, http://www.ElectricRCAircraftGuy.com
 // NA is for North America, Asia, and the rest of the world not covered by EU
 
 // Two regions!
-#define NA 1 //set by a HIGH on REGIONSWITCH pin
-#define EU 0 //set by a LOW on REGIONSWITCH pin
+#define REGION 1 //1 for NA, 0 for EU
 
 // What pins do what
 #define LED LED_BUILTIN //LED indicator pin (usually 13)
