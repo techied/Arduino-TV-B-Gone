@@ -1,13 +1,11 @@
 # README.md update history:  
-Readme Last Updated: 22 Oct. 2016  
-By Gabriel Staples, http://www.ElectricRCAircraftGuy.com  
--My contact info is available by clicking the "Contact Me" tab at the top of my website.  
+Readme Last Updated: 17 Oct. 2019
 
 # Current Code Version & History:  
--see Arduino_TV_B_Gone.ino for full version history 
 
 Semver (http://semver.org/) VERSION HISTORY (newest on top):  
 (date format: yyyymmdd; ex: 20161022 is 22 Oct. 2016)  
+ - 20191017 - v1.4 - Simplification of sketch (no external button)
  - 20161022 - v1.3 - Semver versioning implemented; various code updates, clarifications, & comment additions, and changes to fix PROGMEM incompatibilities so it will now compile with latest versions of gcc compiler; also improved blink indicator routines & added the ability to stop the code-sending sequence once it has begun; by Gabriel Staples (http://www.ElectricRCAircraftGuy.com)  
  - 20101023 - v1.2 - Latest version posted by Ken Shirriff on his website here (http://www.righto.com/2010/11/improved-arduino-tv-b-gone.html) (direct download link here: http://arcfn.com/files/arduino-tv-b-gone-1.2.zip)  
  - 20101018 - v1.2 - Universality for EU (European Union) & NA (North America) added by Mitch Altman; sleep mode added by ka1kjz  
@@ -15,7 +13,7 @@ Semver (http://semver.org/) VERSION HISTORY (newest on top):
  - 20090816 - v1.2 - for ATtiny85v, by Mitch Altman & Limor Fried (https://www.adafruit.com/), w/some code by Kevin Timmerman & Damien Good  
 
 # Description:  
-This code is the TV-B-Gone library ported to run on the Arduino.  
+This code is the TV-B-Gone library ported to run on the Arduino. I have simplified the original sketch. Hardcoded region switch, no button implementation (if you want to try again, hit the reset button) no interrupt. There is also a 3D model for a case you can use which nicely fits an IR LED, 9V battery, Arduino Nano, and SPST on/off switch. Model To Be Uploaded.
 
 # Background:
 -see Arduino_TV_B_Gone.ino for latest version history & more details. 
