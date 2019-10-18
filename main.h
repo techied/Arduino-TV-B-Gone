@@ -1,7 +1,5 @@
 /*
-Last Updated: 22 Oct. 2016
-By Gabriel Staples, http://www.ElectricRCAircraftGuy.com 
--My contact info is available by clicking the "Contact Me" tab at the top of my website.
+Last Updated: 17 Oct. 2019
 */
 
 #include <avr/pgmspace.h>
