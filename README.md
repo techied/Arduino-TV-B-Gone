@@ -5,7 +5,7 @@ Readme Last Updated: 17 Oct. 2019
 
 Semver (http://semver.org/) VERSION HISTORY (newest on top):  
 (date format: yyyymmdd; ex: 20161022 is 22 Oct. 2016)  
- - 20191017 - v1.4 - Simplification of sketch (no external button)
+ - 20191017 - v1.4 - Simplification of sketch (no external button or interrupts) and addition of REGION definition
  - 20161022 - v1.3 - Semver versioning implemented; various code updates, clarifications, & comment additions, and changes to fix PROGMEM incompatibilities so it will now compile with latest versions of gcc compiler; also improved blink indicator routines & added the ability to stop the code-sending sequence once it has begun; by Gabriel Staples (http://www.ElectricRCAircraftGuy.com)  
  - 20101023 - v1.2 - Latest version posted by Ken Shirriff on his website here (http://www.righto.com/2010/11/improved-arduino-tv-b-gone.html) (direct download link here: http://arcfn.com/files/arduino-tv-b-gone-1.2.zip)  
  - 20101018 - v1.2 - Universality for EU (European Union) & NA (North America) added by Mitch Altman; sleep mode added by ka1kjz  
